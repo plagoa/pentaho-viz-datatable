@@ -1,0 +1,22 @@
+{
+  "name": "demo-vizapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "common-ui": "github:pentaho/pentaho-platform-plugin-common-ui",
+    "datatables.net": "^1.10.12",
+    "datatables.net-bs": "^1.10.12",
+    "datatables.net-fixedheader": "^3.1.2",
+    "datatables.net-fixedheader-bs": "^3.1.2",
+    "jquery": "^2.2.4",
+    "requirejs": "^2.2.0",
+    "underscore": "^1.8.3"
+  }
+}

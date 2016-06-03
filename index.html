@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Viz DataTable</title>
+
+  <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" href="node_modules/datatables.net-bs/css/dataTables.bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" href="node_modules/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.css"/>
+
+  <script language="javascript" type="text/javascript" src="node_modules/requirejs/require.js"></script>
+
+  <script type="text/javascript">
+  (function(w) {
+    "use strict";
+
+    require.config(
+      {
+        baseUrl: "/",
+        paths: {
+          "jquery": "node_modules/jquery/dist/jquery.min",
+          "underscore": "node_modules/underscore/underscore-min",
+          "bootstrap" :  "node_modules/bootstrap/dist/js/bootstrap.min",
+
+          "datatables.net": "node_modules/datatables.net/js/jquery.dataTables",
+          "datatables.net-bs": "node_modules/datatables.net-bs/js/dataTables.bootstrap",
+          "datatables.net-fixedheader": "node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader",
+
+          "pentaho": "node_modules/common-ui/package-res/resources/web/pentaho",
+
+          "json": "node_modules/common-ui/package-res/resources/web/util/require-json/json",
+          "text": "node_modules/common-ui/package-res/resources/web/util/require-text/text",
+
+          "mock-pentaho/i18n": "node_modules/common-ui/test-js/unit/pentaho/i18nMock"
+        },
+        map: {
+          "*": {
+            "pentaho/i18n": "mock-pentaho/i18n"
+          }
+        },
+        shim: {
+          "bootstrap": {
+            "deps": ["jquery"]
+          }
+        }
+      }
+    );
+  })(window);
+  </script>
+  <script>
+  (function() {
+    "use strict";
+
+    require(["main"]);
+  })();
+  </script>
+</head>
+<body>
+  <div id="output" style="width: 80%; margin: 0 auto; margin-top: 40px;"></div>
+</body>
+</html>
