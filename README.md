@@ -1,2 +1,2 @@
-# pentaho-datatables-viz
+# pentaho-viz-datatable
 Table visualization for VizAPI 
