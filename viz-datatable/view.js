@@ -37,7 +37,8 @@ define([
         columns:        tData.columns,
 
         //scrollY:        this.model.getv("scrollY"),
-        fixedHeader:       this.model.getv("fixedHeader")
+        fixedHeader:    this.model.getv("fixedHeader"),
+        ordering:       this.model.getv("ordering")
       } );
     },
 

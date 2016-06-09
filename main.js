@@ -22,7 +22,8 @@ define(
         data: new Table(mockData(1000, 5)),
 
         scrollY: 500,
-        fixedHeader: true
+        fixedHeader: true,
+        ordering: true
       }
     );
 

@@ -18,6 +18,11 @@ define([
             name: "fixedHeader",
             type: "boolean"
           }
+          ,
+          {
+            name: "ordering",
+            type: "boolean"
+          }
         ]
       }
     });
